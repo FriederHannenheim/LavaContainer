@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "lavacontainer",
+  "version": "${version}",
+  "name": "Lava Container",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "ISC",
+  "icon": "assets/lavacontainer/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "fhannenheim.lavacontainer.LavaContainer"
+    ]
+  },
+  "mixins": [
+    "lavacontainer.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": ">=1.16.3"
+  }
+}

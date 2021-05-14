@@ -1,0 +1,17 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "lavacontainer:item/lava_container"
+  },
+  "overrides": [
+    {"predicate": {"fill_level": 1}, "model": "lavacontainer:item/lava_container_0"},
+    {"predicate": {"fill_level": 2}, "model": "lavacontainer:item/lava_container_1"},
+    {"predicate": {"fill_level": 3}, "model": "lavacontainer:item/lava_container_2"},
+    {"predicate": {"fill_level": 4}, "model": "lavacontainer:item/lava_container_3"},
+    {"predicate": {"fill_level": 5}, "model": "lavacontainer:item/lava_container_4"},
+    {"predicate": {"fill_level": 6}, "model": "lavacontainer:item/lava_container_5"},
+    {"predicate": {"fill_level": 7}, "model": "lavacontainer:item/lava_container_6"},
+    {"predicate": {"fill_level": 8}, "model": "lavacontainer:item/lava_container_7"},
+    {"predicate": {"fill_level": 9}, "model": "lavacontainer:item/lava_container_8"}
+  ]
+}
