@@ -13,13 +13,18 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.jetbrains.annotations.Nullable;
 
 public class LavaContainer implements ModInitializer {
     public static final Item LAVA_CONTAINER = new LavaContainerItem(new FabricItemSettings().group(ItemGroup.MISC).maxCount(1));
+    public static Logger LOGGER;
 
     @Override
     public void onInitialize() {
+        LOGGER = LogManager.getLogger(getClass().getName());
+
         Registry.register(Registry.ITEM, new Identifier("lavacontainer", "lava_container"), LAVA_CONTAINER);
 
         ModelPredicateProviderRegistryMixin.register(LAVA_CONTAINER, new Identifier("fill_level"), (stack, world, entity) -> {
